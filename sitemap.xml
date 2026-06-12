@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
-    <loc>https://marczak.io/</loc>
+    <loc>https://adammarczak.pl/</loc>
   </url><url>
-    <loc>https://marczak.io/openapi.json</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
+    <loc>https://adammarczak.pl/openapi.json</loc>
+    <lastmod>2026-06-12T14:17:44&#43;02:00</lastmod>
   </url>
   <url>
-    <loc>https://marczak.io/.well-known/openapi.json</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
+    <loc>https://adammarczak.pl/.well-known/openapi.json</loc>
+    <lastmod>2026-06-12T14:17:44&#43;02:00</lastmod>
   </url>
   <url>
-    <loc>https://marczak.io/.well-known/agent.json</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
+    <loc>https://adammarczak.pl/.well-known/agent.json</loc>
+    <lastmod>2026-06-12T14:17:44&#43;02:00</lastmod>
   </url>
   <url>
-    <loc>https://marczak.io/.well-known/ai-plugin.json</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
+    <loc>https://adammarczak.pl/.well-known/ai-plugin.json</loc>
+    <lastmod>2026-06-12T14:17:44&#43;02:00</lastmod>
   </url>
   <url>
-    <loc>https://marczak.io/posts.json</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
+    <loc>https://adammarczak.pl/llms.txt</loc>
+    <lastmod>2026-06-12T14:17:44&#43;02:00</lastmod>
   </url>
   <url>
-    <loc>https://marczak.io/videos.json</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://marczak.io/news.json</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://marczak.io/llms.txt</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
-  </url>
-  <url>
-    <loc>https://marczak.io/llms-full.txt</loc>
-    <lastmod>2026-06-12T12:43:43&#43;02:00</lastmod>
+    <loc>https://adammarczak.pl/llms-full.txt</loc>
+    <lastmod>2026-06-12T14:17:44&#43;02:00</lastmod>
   </url>
 </urlset>

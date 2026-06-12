@@ -1,19 +1,19 @@
 {
   "schema_version": "1.1",
-  "name_for_human": "Marczak.IO Blog & Azure 4 Everyone YouTube",
+  "name_for_human": "AdamMarczak.PL About Me",
   "name_for_model": "marczak_io",
-  "description_for_human": "Discover Azure architecture, Logic Apps, integration, automation, AI blog posts and Azure 4 Everyone YouTube content from Adam Marczak.",
-  "description_for_model": "Browse Marczak.IO site content and Azure 4 Everyone YouTube resources, including articles on serverless, Logic Apps, integration patterns, Azure AI, and cloud automation.",
+  "description_for_human": "Discover Adam Marczak's about-me profile, achievements, social links, and Azure 4 Everyone YouTube channel.",
+  "description_for_model": "Browse AdamMarczak.PL about-me content and linked resources, including profile sections, achievements, and Azure 4 Everyone YouTube references.",
   "auth": {
     "type": "none"
   },
   "api": {
     "type": "openapi",
-    "url": "https://marczak.io/.well-known/openapi.json",
+    "url": "https://adammarczak.pl/.well-known/openapi.json",
     "is_user_authenticated": false
   },
-  "logo_url": "https://marczak.io/images/favicon.ico",
+  "logo_url": "https://adammarczak.pl/images/favicon.ico",
   "contact_email": "adam@marczak.io",
-  "legal_info_url": "https://marczak.io/about",
-  "terms_of_service_url": "https://marczak.io/about"
+  "legal_info_url": "https://adammarczak.pl/",
+  "terms_of_service_url": "https://adammarczak.pl/"
 }

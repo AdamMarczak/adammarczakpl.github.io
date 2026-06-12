@@ -1,18 +1,18 @@
 openapi: 3.0.3
 info:
-  title: Marczak.IO Content Discovery API
+  title: AdamMarczak.PL About Me Discovery API
   description: >-
-    Lightweight discovery API manifest for Marczak.IO. This helps AI assistants and
-    crawlers understand available blog posts and Azure 4 Everyone YouTube content on
-    a site dedicated to Azure architecture, Logic Apps, integration, automation, and AI.
+    Lightweight discovery API manifest for AdamMarczak.PL. This helps AI assistants and
+    crawlers understand Adam Marczak's about-me profile, achievements, and linked
+    technical channels.
   version: 1.0.0
 servers:
-  - url: https://marczak.io
+  - url: https://adammarczak.pl
 paths:
   /search:
     get:
-      summary: Search website content and video metadata
-      description: Search Marczak.IO blog posts, tutorials, and Azure 4 Everyone YouTube resources by query.
+      summary: Search profile content and linked resources
+      description: Search AdamMarczak.PL profile sections and linked Azure 4 Everyone YouTube resources by query.
       parameters:
         - name: q
           in: query
@@ -39,7 +39,7 @@ paths:
   /page/{slug}:
     get:
       summary: Retrieve a single page
-      description: Get metadata for a blog page or article by slug.
+      description: Get metadata for a website page by slug.
       parameters:
         - name: slug
           in: path
@@ -73,27 +73,13 @@ paths:
                     type: array
                     items:
                       $ref: '#/components/schemas/VideoSummary'
-  /posts.json:
+  /:
     get:
-      summary: Get blog posts catalog
-      description: Retrieve the machine-readable JSON catalog for blog posts.
+      summary: Get homepage profile
+      description: Retrieve the main about-me page with profile and achievement highlights.
       responses:
         '200':
-          description: Posts JSON catalog
-  /videos.json:
-    get:
-      summary: Get videos catalog
-      description: Retrieve the machine-readable JSON catalog for video content.
-      responses:
-        '200':
-          description: Videos JSON catalog
-  /news.json:
-    get:
-      summary: Get news catalog
-      description: Retrieve the machine-readable JSON catalog for news content.
-      responses:
-        '200':
-          description: News JSON catalog
+          description: Homepage HTML
 components:
   schemas:
     PageSummary:

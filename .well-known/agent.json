@@ -1,29 +1,26 @@
 {
   "name": "Marczak.IO Agent Discovery",
-  "description": "Agent discovery metadata for Marczak.IO, exposing searchable blog content and Azure 4 Everyone YouTube video metadata.",
+  "description": "Agent discovery metadata for Marczak.IO, exposing about-me profile sections and linked Azure 4 Everyone YouTube metadata.",
   "version": "1.0.0",
   "owner": {
     "@type": "Person",
     "name": "Adam Marczak",
-    "url": "https://marczak.io/about",
-    "email": "adam@marczak.io"
+    "url": "https://adammarczak.pl/",
+    "email": "adam.io"
   },
-  "website": "https://marczak.io",
+  "website": "https://adammarczak.pl",
   "contact": {
-    "email": "adam@marczak.io",
+    "email": "adam.io",
     "twitter": "https://twitter.com/MarczakIO",
     "youtube": "https://www.youtube.com/azure4everyone",
     "github": "https://github.com/MarczakIO"
   },
   "discovery": {
-    "llms": "https://marczak.io/llms.txt",
-    "llms_full": "https://marczak.io/llms-full.txt",
-    "posts_json": "https://marczak.io/posts.json",
-    "videos_json": "https://marczak.io/videos.json",
-    "news_json": "https://marczak.io/news.json",
-    "plugin_manifest": "https://marczak.io/.well-known/ai-plugin.json",
-    "openapi_yaml": "https://marczak.io/.well-known/openapi.yaml",
-    "openapi_json": "https://marczak.io/.well-known/openapi.json"
+    "llms": "https://adammarczak.pl/llms.txt",
+    "llms_full": "https://adammarczak.pl/llms-full.txt",
+    "plugin_manifest": "https://adammarczak.pl/.well-known/ai-plugin.json",
+    "openapi_yaml": "https://adammarczak.pl/.well-known/openapi.yaml",
+    "openapi_json": "https://adammarczak.pl/.well-known/openapi.json"
   },
   "endpoints": {
     "search": "/search",

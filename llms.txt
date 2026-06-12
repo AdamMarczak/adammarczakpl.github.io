@@ -1,20 +1,13 @@
 # llms.txt - plain-text discovery metadata for LLMs and AI crawlers
-name: Marczak.IO
+name: AdamMarczak.PL
 author: Adam Marczak
-url: https://marczak.io
-description: Azure architecture, Logic Apps, integration, serverless, automation, and AI blog with Azure 4 Everyone YouTube content.
-content: Blog posts, tutorials, and video guides on Azure integration, Logic Apps, cloud automation, AI, and developer architecture.
+url: https://adammarczak.pl
+description: Personal about-me website for Adam Marczak with professional background, achievements, and links to technical channels.
+content: Profile information, career highlights, social links, and references to Azure 4 Everyone YouTube content.
 youtube: https://www.youtube.com/azure4everyone
 youtube_description: Azure 4 Everyone YouTube channel with video tutorials on Azure integration, Logic Apps, serverless, security, and AI.
-sitemap: https://marczak.io/sitemap.xml
-robots: https://marczak.io/robots.txt
-plugin_manifest: https://marczak.io/.well-known/ai-plugin.json
-openapi_yaml: https://marczak.io/.well-known/openapi.yaml
-openapi_json: https://marczak.io/.well-known/openapi.json
-agent_manifest: https://marczak.io/.well-known/agent.json
-llms_full: https://marczak.io/llms-full.txt
-posts_json: https://marczak.io/posts.json
-videos_json: https://marczak.io/videos.json
-news_json: https://marczak.io/news.json
+sitemap: https://adammarczak.pl/sitemap.xml
+robots: https://adammarczak.pl/robots.txt
+llms_full: https://adammarczak.pl/llms-full.txt
 contact: adam@marczak.io
-tags: azure,logic-apps,serverless,integration,ai,youtube
+tags: about-me,personal-profile,azure,cloud-architecture,youtube

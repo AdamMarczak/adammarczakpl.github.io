@@ -1,17 +1,14 @@
 User-agent: *
 Allow: /
-Sitemap: https://marczak.io/sitemap.xml
-Host: marczak.io
+Sitemap: https://adammarczak.pl/sitemap.xml
+Host: adammarczak.pl
 
-# Marczak.IO publishes Azure architecture, serverless, Logic Apps, integration,
-# automation, and AI blog content with a companion Azure 4 Everyone YouTube channel.
+# AdamMarczak.PL is Adam Marczak's personal about-me website with profile details,
+# achievements, social links, and references to Azure 4 Everyone YouTube content.
 # AI discovery endpoints:
-# - https://marczak.io/llms.txt
-# - https://marczak.io/llms-full.txt
-# - https://marczak.io/.well-known/ai-plugin.json
-# - https://marczak.io/.well-known/openapi.yaml
-# - https://marczak.io/.well-known/openapi.json
-# - https://marczak.io/.well-known/agent.json
-# - https://marczak.io/posts.json
-# - https://marczak.io/videos.json
-# - https://marczak.io/news.json
+# - https://adammarczak.pl/llms.txt
+# - https://adammarczak.pl/llms-full.txt
+# - https://adammarczak.pl/.well-known/ai-plugin.json
+# - https://adammarczak.pl/.well-known/openapi.yaml
+# - https://adammarczak.pl/.well-known/openapi.json
+# - https://adammarczak.pl/.well-known/agent.json
