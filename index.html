@@ -147,6 +147,26 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
   }
+  .achievements-section {
+
+  }
+  .achievements-section h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .achievements-intro {
+    max-width: 740px;
+    margin-bottom: 22px;
+    color: #4b5563;
+  }
+  .achievements-section .portfolio-grid {
+    gap: 20px;
+  }
+  .achievements-section .portfolio-card {
+    border: 1px solid #cfe0f1;
+    border-radius: 12px;
+    box-shadow: 0 10px 26px -20px rgba(15, 23, 42, 0.45);
+  }
   .portfolio-card {
     background: #ffffff;
     border: 1px solid #e5e7eb;
@@ -154,15 +174,23 @@
     padding: 18px;
     box-shadow: none;
   }
-  .achievement-image {
+  .achievement-media {
     width: 100%;
-    height: 130px;
-    object-fit: contain;
+    aspect-ratio: 16 / 9;
     margin-bottom: 14px;
     border-radius: 8px;
     background: #f8fafc;
     border: 1px solid #eef2f7;
-    padding: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .achievement-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   .portfolio-card h3 {
     margin: 0 0 8px;
@@ -182,33 +210,55 @@
     font-weight: 600;
     text-decoration: none;
   }
-  .career-line {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-left: 2px solid #9ec5f8;
+  .roles-section {
+    background: #ffffff;
+    border-top: 1px solid #e5edf6;
+    border-bottom: 1px solid #e5edf6;
   }
-  .career-line li {
+  .roles-section h2 {
+    margin-bottom: 10px;
+  }
+  .roles-intro {
+    max-width: 760px;
+    margin-bottom: 18px;
+    color: #475569;
+  }
+  .roles-list {
+    max-width: 920px;
+    border-left: 6px solid #0b5cad;
+    padding-left: 26px;
+  }
+  .role-row {
     position: relative;
-    margin: 0 0 18px;
-    padding: 2px 0 0 20px;
+    padding: 18px 0 20px;
+    border-bottom: 1px solid #dbe8f5;
   }
-  .career-line li:before {
+  .role-row:last-child {
+    border-bottom: 0;
+    padding-bottom: 6px;
+  }
+  .role-row:before {
     content: "";
     position: absolute;
-    left: -7px;
-    top: 9px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #0b5cad;
+    left: -35px;
+    top: 24px;
   }
-  .career-period {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.9px;
-    color: #1d4f91;
-    font-weight: 700;
+  .role-content h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 1.15;
+    color: #0f172a;
+  }
+  .role-content p {
+    margin: 0;
+    color: #334155;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 800px;
   }
   .social-row {
     display: flex;
@@ -238,6 +288,22 @@
   @media (max-width: 992px) {
     .portfolio-grid {
       grid-template-columns: 1fr;
+    }
+    .roles-list {
+      padding-left: 18px;
+      border-left-width: 4px;
+    }
+    .role-row:before {
+      width: 10px;
+      height: 10px;
+      left: -25px;
+      top: 22px;
+    }
+    .role-content h3 {
+      font-size: 24px;
+    }
+    .role-content p {
+      font-size: 16px;
     }
     .hero-head {
       gap: 14px;
@@ -284,63 +350,83 @@
     </div>
   </section>
 
-  <section class="portfolio-section">
+  <section class="portfolio-section achievements-section">
     <div class="container">
       <h2>Professional Achievements</h2>
+      <p class="achievements-intro">Highlights of my community work, content, and professional recognition.</p>
       <div class="portfolio-grid">
         
         <article class="portfolio-card">
           
-          <img class="achievement-image" src="/images/mvp.png" alt="Adam Marczak achievement image">
+          <div class="achievement-media">
+            <img class="achievement-image" src="/images/yt-screen.jpg" alt="Adam Marczak achievement image">
+          </div>
           
-          <h3>Microsoft MVP</h3>
-          <p>Recognized for consistent community contribution in Azure and cloud engineering education.</p>
+          <h3>My YouTube</h3>
+          <p>Practical Azure videos, architecture explainers, and cloud engineering tutorials.</p>
+          
+          <a class="portfolio-link" href="https://www.youtube.com/azure4everyone" target="_blank" rel="noopener">Visit YouTube</a>
+          
         </article>
         
         <article class="portfolio-card">
           
-          <img class="achievement-image" src="/images/youtube.svg" alt="Adam Marczak achievement image">
+          <div class="achievement-media">
+            <img class="achievement-image" src="/images/blog-screen.jpg" alt="Adam Marczak achievement image">
+          </div>
           
-          <h3>Azure 4 Everyone Creator</h3>
-          <p>Built educational content to make Azure approachable for developers and architects.</p>
+          <h3>My Blog</h3>
+          <p>Articles and guidance focused on real-world cloud architecture and Azure implementation.</p>
+          
+          <a class="portfolio-link" href="https://marczak.io" target="_blank" rel="noopener">Open Blog</a>
+          
         </article>
         
         <article class="portfolio-card">
           
-          <img class="achievement-image" src="/images/icons/checklist.svg" alt="Adam Marczak achievement image">
+          <div class="achievement-media">
+            <img class="achievement-image" src="/images/mvp.png" alt="Adam Marczak achievement image">
+          </div>
           
-          <h3>Enterprise Delivery Experience</h3>
-          <p>Supported multiple organizations with architecture decisions, platform modernization, and cloud adoption.</p>
+          <h3>Microsoft Azure MVP</h3>
+          <p>Recognized by Microsoft for ongoing technical community contributions in Azure.</p>
+          
+          <a class="portfolio-link" href="https://mvp.microsoft.com/en-US/MVP/profile/013a34ad-2510-ea11-a811-000d3a8ccba0" target="_blank" rel="noopener">View MVP Profile</a>
+          
         </article>
         
       </div>
     </div>
   </section>
 
-  <section class="portfolio-section">
+  <section class="portfolio-section roles-section">
     <div class="container">
-      <h2>Career Journey</h2>
-      <ul class="career-line">
+      <h2>Key Roles</h2>
+      <p class="roles-intro">Selected leadership and engineering roles that shaped my cloud architecture journey.</p>
+      <div class="roles-list">
         
-        <li>
-          <div class="career-period">Today</div>
-          <h3>Principal Cloud Architect and Educator</h3>
-          <p>Advising teams on cloud architecture, governance, and practical platform operations.</p>
-        </li>
+        <article class="role-row">
+          <div class="role-content">
+            <h3>Head of Azure Practice at C&amp;F</h3>
+            <p>Helping clients get to where they need to be by leveraging Azure, Databricks and Microsoft Fabric</p>
+          </div>
+        </article>
         
-        <li>
-          <div class="career-period">Previous Years</div>
-          <h3>Architect, Engineer, and Trainer</h3>
-          <p>Delivered integration and cloud solutions, mentored teams, and led technical enablement initiatives.</p>
-        </li>
+        <article class="role-row">
+          <div class="role-content">
+            <h3>Chief Architect for Data &amp; Analytics Platform at large FMCG</h3>
+            <p>Designed, built, and ran entire new data platform including team and ops, including assisting with migration of 150 solutions into that platform.</p>
+          </div>
+        </article>
         
-        <li>
-          <div class="career-period">Early Career</div>
-          <h3>Software Engineer</h3>
-          <p>Started with software development and infrastructure topics before specializing in cloud architecture.</p>
-        </li>
+        <article class="role-row">
+          <div class="role-content">
+            <h3>Chief Azure Architect at Lingaro</h3>
+            <p>Delivered integration and cloud solutions, mentored teams, and led technical enablement initiatives.</p>
+          </div>
+        </article>
         
-      </ul>
+      </div>
     </div>
   </section>
 
@@ -365,35 +451,6 @@
           <h3>Professional Profile</h3>
           <p>Career background, speaking, and collaboration details.</p>
           <a class="portfolio-link" href="https://www.linkedin.com/in/adam-marczak-96088929/" target="_blank" rel="noopener">View LinkedIn</a>
-        </article>
-        
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolio-section">
-    <div class="container">
-      <h2>External Links</h2>
-      <div class="portfolio-grid">
-        
-        <article class="portfolio-card">
-          <h3>Azure 4 Everyone</h3>
-          <p>My companion project with practical learning content focused on Azure.</p>
-          <a class="portfolio-link" href="https://azure4everyone.com" target="_blank" rel="noopener">Open site</a>
-        </article>
-        
-        
-        <article class="portfolio-card">
-          <h3>GitHub</h3>
-          <p>Open source work, samples, and learning repositories.</p>
-          <a class="portfolio-link" href="https://github.com/MarczakIO" target="_blank" rel="noopener">Visit GitHub</a>
-        </article>
-        
-        
-        <article class="portfolio-card">
-          <h3>LinkedIn</h3>
-          <p>Professional profile, career history, and collaboration touchpoints.</p>
-          <a class="portfolio-link" href="https://www.linkedin.com/in/adam-marczak-96088929/" target="_blank" rel="noopener">Open LinkedIn</a>
         </article>
         
       </div>
