@@ -97,7 +97,6 @@
   .about-hero h1 {
     margin: 0;
     font-size: 44px;
-    font-weight: 600;
     letter-spacing: 0.3px;
   }
   .about-hero .subtitle {
@@ -122,7 +121,6 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-weight: 500;
     color: #0f172a;
     background: #f8fafc;
     border-radius: 999px;
@@ -135,7 +133,6 @@
   .about-section h2 {
     margin: 0 0 18px;
     font-size: 30px;
-    font-weight: 600;
     color: #0f172a;
   }
   .about-section p {
@@ -147,25 +144,33 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
   }
-  .achievements-section {
-
-  }
   .achievements-section h2 {
     font-size: 34px;
     margin-bottom: 10px;
   }
   .achievements-intro {
     max-width: 740px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
     color: #4b5563;
   }
   .achievements-section .about-grid {
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
   .achievements-section .about-card {
-    border: 1px solid #cfe0f1;
-    border-radius: 12px;
-    box-shadow: 0 10px 26px -20px rgba(15, 23, 42, 0.45);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    border-bottom: 1px solid #dde8f4;
+  }
+  .achievements-section .about-card:first-child {
+    border-top: 1px solid #dde8f4;
   }
   .about-card {
     background: #ffffff;
@@ -175,45 +180,101 @@
     box-shadow: none;
   }
   .achievement-media {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    margin-bottom: 14px;
-    border-radius: 8px;
-    background: #f8fafc;
-    border: 1px solid #eef2f7;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-shrink: 0;
+    width: 280px;
+    border: 1px solid #e5e7eb;
+    height: 180px;
+    border-radius: 10px;
     overflow: hidden;
   }
   .achievement-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+  }
+  .achievement-body {
+    flex: 1;
+    width: 100%;
   }
   .about-card h3 {
-    margin: 0 0 8px;
-    font-size: 19px;
+    margin: 0 0 10px;
+    font-size: 22px;
     color: #0f172a;
+    letter-spacing: -0.1px;
+    width: 100%;
   }
   .about-card p {
     margin: 0;
-    color: #334155;
-    font-size: 15px;
-    line-height: 1.65;
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.75;
+    width: 100%;
   }
   .about-link {
     margin-top: 12px;
-    display: inline-block;
-    color: #0b5cad;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(66 9 148);
     font-weight: 600;
     text-decoration: none;
   }
+  .achievements-section .about-link::before {
+    content: "\f08e";
+    font-family: FontAwesome;
+    font-size: 14px;
+    margin-right: 8px;
+    line-height: 1;
+  }
+  .topmind-section {
+    background: #ffffff;
+  }
+  .topmind-section h2 {
+    margin-bottom: 10px;
+  }
+  .topmind-intro {
+    max-width: 880px;
+    margin-bottom: 20px;
+    color: #475569;
+  }
+  .topmind-list {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  .topmind-item {
+    display: flex;
+    align-items: stretch;
+    gap: 22px;
+  }
+  .topmind-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(66 9 148);
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 0;
+  }
+  .topmind-content h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #0f172a;
+    letter-spacing: -0.1px;
+  }
+  .topmind-content p {
+    margin: 0;
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.75;
+    max-width: 1080px;
+  }
   .roles-section {
     background: #ffffff;
-    border-top: 1px solid #e5edf6;
-    border-bottom: 1px solid #e5edf6;
   }
   .roles-section h2 {
     margin-bottom: 10px;
@@ -225,7 +286,7 @@
   }
   .roles-list {
     max-width: 920px;
-    border-left: 6px solid #0b5cad;
+    border-left: 6px solid rgb(66 9 148);
     padding-left: 26px;
   }
   .role-row {
@@ -243,7 +304,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #0b5cad;
+    background: rgb(66 9 148);
     left: -35px;
     top: 24px;
   }
@@ -318,6 +379,46 @@
     .about-hero .subtitle {
       font-size: 18px;
     }
+    .achievements-section .about-card {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 28px 0;
+      gap: 18px;
+    }
+    .achievement-media {
+      width: 100%;
+      height: 180px;
+    }
+    .about-card h3 {
+      font-size: 19px;
+    }
+    .topmind-item {
+      gap: 14px;
+    }
+    .topmind-number {
+      width: 48px;
+      height: auto;
+      font-size: 28px;
+    }
+    .topmind-content h3 {
+      font-size: 22px;
+    }
+    .topmind-content p {
+      font-size: 16px;
+    }
+  }
+
+  .about-page h1,
+  .about-page h2,
+  .about-page h3,
+  .about-page h4,
+  .about-page h5,
+  .about-page h6 {
+    font-size: 30px;
+  }
+
+  .about-page p {
+    font-size: 18px;
   }
 </style>
 
@@ -352,47 +453,98 @@
 
   <section class="about-section achievements-section">
     <div class="container">
-      <h2>Professional Achievements</h2>
-      <p class="achievements-intro">Highlights of my community work, content, and professional recognition.</p>
+      <h2>Personal Achievements</h2>
+      <p class="achievements-intro">Highlights of my community work, content, and personal recognition.</p>
       <div class="about-grid">
         
         <article class="about-card">
           
+          
           <div class="achievement-media">
-            <img class="achievement-image" src="/images/yt-screen.jpg" alt="Adam Marczak achievement image">
+            <img class="achievement-image" src="/images/yt-screen.jpg" alt="Adam Marczak achievement image" style="object-fit: cover">
           </div>
           
-          <h3>My YouTube</h3>
-          <p>Practical Azure videos, architecture explainers, and cloud engineering tutorials.</p>
-          
-          <a class="about-link" href="https://www.youtube.com/azure4everyone" target="_blank" rel="noopener">Visit YouTube</a>
-          
+          <div class="achievement-body">
+            <h3>YouTube channel with 250,000&#43; subscribers and 5,5&#43; million views a year</h3>
+            <p>Azure 4 Everyone is one of the things I am most proud of. Over 250,000 subscribers and 5.5 million views a year. Built entirely around making Azure genuinely accessible to everyone. No fluff, just real engineering explained clearly.</p>
+            
+            <a class="about-link" href="https://www.youtube.com/azure4everyone" target="_blank" rel="noopener">Visit YouTube</a>
+            
+          </div>
         </article>
         
         <article class="about-card">
           
+          
           <div class="achievement-media">
-            <img class="achievement-image" src="/images/blog-screen.jpg" alt="Adam Marczak achievement image">
+            <img class="achievement-image" src="/images/blog-screen.jpg" alt="Adam Marczak achievement image" style="object-fit: cover">
           </div>
           
-          <h3>My Website</h3>
-          <p>My personal about-me hub with highlights, background, and ways to connect.</p>
-          
-          <a class="about-link" href="https://adammarczak.pl" target="_blank" rel="noopener">Open Website</a>
-          
+          <div class="achievement-body">
+            <h3>My technical blog with 200,000 visitors a year</h3>
+            <p>Over 90 in-depth posts on Azure architecture, integration, and cloud engineering... and growing, 200,000 visitors a year come here for practical guidance they can actually use in production.</p>
+            
+            <a class="about-link" href="https://marczak.io" target="_blank" rel="noopener">Open Blog</a>
+            
+          </div>
         </article>
         
         <article class="about-card">
           
+          
           <div class="achievement-media">
-            <img class="achievement-image" src="/images/mvp.png" alt="Adam Marczak achievement image">
+            <img class="achievement-image" src="/images/mvp.png" alt="Adam Marczak achievement image" style="object-fit: contain">
           </div>
           
-          <h3>Microsoft Azure MVP</h3>
-          <p>Recognized by Microsoft for ongoing technical community contributions in Azure.</p>
-          
-          <a class="about-link" href="https://mvp.microsoft.com/en-US/MVP/profile/013a34ad-2510-ea11-a811-000d3a8ccba0" target="_blank" rel="noopener">View MVP Profile</a>
-          
+          <div class="achievement-body">
+            <h3>Microsoft Azure MVP award for 7&#43; Years</h3>
+            <p>Awarded the Microsoft Most Valuable Professional title for Azure every year for over 7 years straight. It recognises consistent, genuine contribution to the technical community — and I take that seriously every single year.</p>
+            
+            <a class="about-link" href="https://mvp.microsoft.com/en-US/MVP/profile/013a34ad-2510-ea11-a811-000d3a8ccba0" target="_blank" rel="noopener">View MVP Profile</a>
+            
+          </div>
+        </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section topmind-section">
+    <div class="container">
+      <h2>My Top of Mind</h2>
+      <p class="topmind-intro">The topics I am thinking about and actively exploring right now.</p>
+      <div class="topmind-list">
+        
+        <article class="topmind-item">
+          <div class="topmind-number">1</div>
+          <div class="topmind-content">
+            <h3>From Azure first to Databricks and Fabric first</h3>
+            <p>Databricks/Fabric are now the new default for modern data platforms, and Azure is becoming a transparent background for compute, storage, networking, security, and governance.</p>
+          </div>
+        </article>
+        
+        <article class="topmind-item">
+          <div class="topmind-number">2</div>
+          <div class="topmind-content">
+            <h3>Modern engineering and transformation with AI</h3>
+            <p>How does modern data engineering look? From the definition of role, skills, through education journey and evolution, while maintaining unique value of people, and finding the right case for AI.</p>
+          </div>
+        </article>
+        
+        <article class="topmind-item">
+          <div class="topmind-number">3</div>
+          <div class="topmind-content">
+            <h3>AI assisted migrations and modernizations</h3>
+            <p>AI already proved its value, now we explore a new, previously often too expensive avenue of modernizing apps or migrating legacy solutions to new codebases, platforms, and frameworks.</p>
+          </div>
+        </article>
+        
+        <article class="topmind-item">
+          <div class="topmind-number">4</div>
+          <div class="topmind-content">
+            <h3>AI Native Data Platforms</h3>
+            <p>How does a modern data platform look? How to enable people while ensuring security, governance, and monitoring are in place. Where will the focus change with new platforms, including frontendless platforms.</p>
+          </div>
         </article>
         
       </div>
@@ -429,34 +581,7 @@
       </div>
     </div>
   </section>
-
-  <section class="about-section">
-    <div class="container">
-      <h2>Top Things to See</h2>
-      <div class="about-grid">
-        
-        <article class="about-card">
-          <h3>Featured Channel</h3>
-          <p>Azure 4 Everyone videos and practical cloud guidance.</p>
-          <a class="about-link" href="https://www.youtube.com/azure4everyone" target="_blank" rel="noopener">Visit YouTube</a>
-        </article>
-        
-        <article class="about-card">
-          <h3>Technical Projects</h3>
-          <p>Code, demos, and learning assets published on GitHub.</p>
-          <a class="about-link" href="https://github.com/MarczakIO" target="_blank" rel="noopener">Open GitHub</a>
-        </article>
-        
-        <article class="about-card">
-          <h3>Professional Profile</h3>
-          <p>Career background, speaking, and collaboration details.</p>
-          <a class="about-link" href="https://www.linkedin.com/in/adam-marczak-96088929/" target="_blank" rel="noopener">View LinkedIn</a>
-        </article>
-        
-      </div>
-    </div>
-  </section>
-
+    
   <section class="about-section">
     <div class="container">
       <h2>Social Media</h2>
@@ -466,6 +591,16 @@
         <a href="https://github.com/MarczakIO" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>
         <a href="https://twitter.com/MarczakIO" target="_blank" rel="noopener"><i class="fa fa-twitter"></i> X</a>
         <a href="https://www.facebook.com/MarczakIO/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="https://www.reddit.com/user/MarczakIO/" target="_blank" rel="noopener"><i class="fa fa-reddit"></i> Reddit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="social-row">
+        <a href="mailto:adam@marczak.io"><i class="fa fa-envelope"></i> Email Me</a>
       </div>
       <div class="about-footer">
         <strong>Adam Marczak</strong> | 2026
